@@ -31,6 +31,11 @@ if(eta < 18){
 }
 
 
+// arrotondamento dei numeri decimali
+
+var prezzototale = prezzototale .toFixed(2);
+
+
 
 // clacolo del costo del biglietto con sconto
 
