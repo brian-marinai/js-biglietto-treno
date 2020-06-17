@@ -6,34 +6,36 @@ var costo = 0.21;
 
 // quanti km devi percorrere
 
-var chiLometri = prompt ("Quanti chilometri devi percorrere?");
+var chiLometri = prompt ("Quanti chilometri devi percorrere?", "inserisci i km");
 
 
 
 // quanti anni hai
 
-var eta = prompt ("Quale è la tua età?");
+var eta = prompt ("Quale è la tua età?", "inserisci la tua eta");
 
 
 
 // calcolo del prezzo
 
-var prezzototale = chiLometri * costo;
+var prezzoTotale = chiLometri * costo;
 
 
 
 // colcolo dell'eta
 
 if(eta < 18){
-  prezzototale = prezzototale / 100 * 80;
+  prezzoTotale = chiLometri * costo - 20/100 * (chiLometri * costo);
 } else if(eta > 65){
-  prezzototale = prezzototale / 100 * 60;
+  prezzoTotale = chiLometri * costo - 40/100 * (chiLometri * costo);
+} else{
+  prezzoTotale = chiLometri * costo;
 }
 
 
 // arrotondamento dei numeri decimali
 
-var prezzototale = prezzototale .toFixed(2);
+var prezzoTotale = prezzoTotale .toFixed(2);
 
 
 
